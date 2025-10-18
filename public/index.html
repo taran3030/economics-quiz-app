@@ -34,7 +34,6 @@
             padding: 20px;
         }
 
-        /* Mobile-First Container */
         .quiz-container {
             background: var(--uo-white);
             border-radius: 20px;
@@ -62,7 +61,6 @@
             }
         }
 
-        /* Header Styles */
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -118,7 +116,6 @@
             font-weight: bold;
         }
 
-        /* Stats Bar - Mobile Responsive */
         .stats-bar {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -145,16 +142,6 @@
             margin-top: 2px;
         }
 
-        @media (min-width: 768px) {
-            .stat-value {
-                font-size: 1.5em;
-            }
-            .stat-label {
-                font-size: 0.9em;
-            }
-        }
-
-        /* Progress Bar */
         .progress-bar {
             width: 100%;
             height: 8px;
@@ -171,7 +158,6 @@
             transition: width 0.3s ease;
         }
 
-        /* Question Section */
         .question-section {
             margin: 30px 0;
             min-height: 300px;
@@ -191,13 +177,6 @@
             line-height: 1.6;
         }
 
-        @media (min-width: 768px) {
-            .question-text {
-                font-size: 1.3em;
-            }
-        }
-
-        /* Options - Mobile Optimized */
         .options {
             list-style: none;
         }
@@ -212,13 +191,6 @@
             transition: all 0.3s ease;
             position: relative;
             font-size: 0.95em;
-        }
-
-        @media (min-width: 768px) {
-            .option {
-                padding: 15px 20px;
-                font-size: 1em;
-            }
         }
 
         .option:hover {
@@ -255,7 +227,6 @@
             75% { transform: translateX(5px); }
         }
 
-        /* Feedback Section */
         .feedback {
             margin-top: 20px;
             padding: 20px;
@@ -266,11 +237,6 @@
         .feedback.show {
             display: block;
             animation: fadeIn 0.5s;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
         }
 
         .feedback.correct {
@@ -285,53 +251,6 @@
             border: 1px solid #f44336;
         }
 
-        .feedback h3 {
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-
-        /* Teaching Elements */
-        .teaching-moment {
-            background: var(--uo-white);
-            border-left: 4px solid var(--uo-green);
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 5px;
-        }
-
-        .teaching-moment h4 {
-            color: var(--uo-green);
-            margin-bottom: 10px;
-            font-size: 1em;
-        }
-
-        .concept-breakdown {
-            background: #f0f7f0;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 10px 0;
-            font-size: 0.95em;
-        }
-
-        .reference-link {
-            background: var(--uo-light-gray);
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 15px;
-            border-left: 3px solid var(--uo-yellow);
-        }
-
-        .reference-link a {
-            color: var(--uo-green);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .reference-link a:hover {
-            text-decoration: underline;
-        }
-
-        /* Buttons - Mobile Friendly */
         .buttons {
             display: flex;
             flex-direction: column;
@@ -373,7 +292,6 @@
         .btn-primary:hover {
             background: var(--uo-forest);
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px -10px rgba(21, 71, 51, 0.5);
         }
 
         .btn-secondary {
@@ -383,94 +301,6 @@
 
         .btn-secondary:hover {
             background: #6d6e68;
-        }
-
-        .btn-accent {
-            background: var(--uo-yellow);
-            color: var(--uo-dark-green);
-        }
-
-        .btn-accent:hover {
-            background: #fdd700;
-        }
-
-        .btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
-        /* Score Section */
-        .score-section {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .score {
-            font-size: 2.5em;
-            color: var(--uo-green);
-            margin: 20px 0;
-            font-weight: bold;
-        }
-
-        @media (min-width: 768px) {
-            .score {
-                font-size: 3em;
-            }
-        }
-
-        /* Document References Section */
-        .document-references {
-            background: var(--uo-light-gray);
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .document-references h3 {
-            color: var(--uo-green);
-            margin-bottom: 15px;
-            font-size: 1.1em;
-        }
-
-        .document-list {
-            list-style: none;
-        }
-
-        .document-item {
-            padding: 10px;
-            background: var(--uo-white);
-            border-radius: 5px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .document-icon {
-            width: 30px;
-            height: 30px;
-            background: var(--uo-green);
-            color: var(--uo-yellow);
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-        }
-
-        /* Quiz Mode Selector - Mobile Responsive */
-        .quiz-mode-selector {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            margin: 20px 0;
-        }
-
-        @media (min-width: 768px) {
-            .quiz-mode-selector {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 15px;
-            }
         }
 
         .mode-btn {
@@ -492,7 +322,6 @@
             background: #f0f7f0;
         }
 
-        /* Topic List - Mobile Optimized */
         .topic-list {
             background: var(--uo-light-gray);
             border-radius: 10px;
@@ -500,33 +329,6 @@
             margin: 20px 0;
         }
 
-        .topic-list ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        @media (min-width: 768px) {
-            .topic-list ul {
-                columns: 2;
-                column-gap: 30px;
-            }
-        }
-
-        .topic-list li {
-            padding: 8px 0;
-            color: #666;
-            break-inside: avoid;
-            font-size: 0.95em;
-        }
-
-        .topic-list li:before {
-            content: "✓ ";
-            color: var(--uo-green);
-            font-weight: bold;
-            margin-right: 8px;
-        }
-
-        /* Session Info Box */
         .session-info {
             background: linear-gradient(135deg, #f0f7f0 0%, var(--uo-light-gray) 100%);
             border-left: 4px solid var(--uo-green);
@@ -535,60 +337,30 @@
             border-radius: 5px;
         }
 
-        .session-info strong {
+        .score {
+            font-size: 2.5em;
             color: var(--uo-green);
+            margin: 20px 0;
+            font-weight: bold;
         }
 
-        /* Upload Section */
-        .upload-section {
-            background: var(--uo-light-gray);
-            border: 2px dashed var(--uo-green);
-            border-radius: 10px;
-            padding: 20px;
+        .score-section {
             text-align: center;
+            padding: 20px;
+        }
+
+        .quiz-mode-selector {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
             margin: 20px 0;
         }
 
-        .upload-btn {
-            background: var(--uo-green);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        /* Mobile Touch Optimization */
-        @media (hover: none) {
-            .option:hover {
-                background: var(--uo-light-gray);
-                transform: none;
+        @media (min-width: 768px) {
+            .quiz-mode-selector {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
             }
-            
-            .option:active {
-                background: #e9ecef;
-                transform: scale(0.98);
-            }
-        }
-
-        /* Scrollbar Styling */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--uo-light-gray);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--uo-green);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--uo-forest);
         }
     </style>
 </head>
@@ -599,79 +371,43 @@
             <h1>MBA Economics Practice Quiz</h1>
             <p class="subtitle">BA 715: Managerial Economics</p>
             <p class="course-info">Professor Glen Waddell - OEMBA Class 41</p>
-            <span class="enhanced-badge">📚 150 Questions | 25 per Session | Mobile Ready</span>
+            <span class="enhanced-badge">📚 25 Question Sessions</span>
         </div>
 
         <div id="startSection" class="start-section">
             <div class="session-info">
-                <strong>🦆 Welcome Ducks!</strong>
-                <p style="margin-top: 10px;">This adaptive quiz system is designed to help you master economic concepts from your BA 715 coursework.</p>
+                <strong>Welcome Ducks!</strong>
+                <p style="margin-top: 10px;">Practice makes perfect! Each session gives you 25 random questions.</p>
             </div>
             
             <div class="quiz-mode-selector">
-                <div class="mode-btn selected" onclick="selectMode('adaptive')">
-                    <h4>🎯 Adaptive</h4>
-                    <p>Focus on weak areas</p>
-                </div>
-                <div class="mode-btn" onclick="selectMode('random')">
-                    <h4>🔄 Random</h4>
+                <div class="mode-btn selected" data-mode="random">
+                    <h4>Random Mode</h4>
                     <p>25 random questions</p>
                 </div>
-                <div class="mode-btn" onclick="selectMode('focused')">
-                    <h4>🔍 Topic Focus</h4>
-                    <p>Choose topics</p>
+                <div class="mode-btn" data-mode="adaptive">
+                    <h4>Adaptive</h4>
+                    <p>Focus on weak areas</p>
+                </div>
+                <div class="mode-btn" data-mode="all">
+                    <h4>All Topics</h4>
+                    <p>Comprehensive review</p>
                 </div>
             </div>
             
             <div class="topic-list">
-                <h3>Course Topics (Based on Prof. Waddell's Materials):</h3>
-                <ul>
-                    <li>Markets & Equilibrium (Ch. 5)</li>
-                    <li>Supply, Demand & Elasticity</li>
-                    <li>Consumer & Producer Surplus</li>
-                    <li>Taxes & Subsidies (Ch. 7)</li>
-                    <li>Price Controls & Regulations (Ch. 8)</li>
-                    <li>Market Structures & Competition</li>
-                    <li>Marginal Analysis & Decision Making</li>
-                    <li>Income & Cross-Price Elasticity</li>
-                    <li>Deadweight Loss & Efficiency</li>
-                    <li>Game Theory Applications</li>
-                    <li>Behavioral Economics</li>
-                    <li>Policy Analysis & Interventions</li>
-                </ul>
-            </div>
-
-            <div class="document-references">
-                <h3>📄 Course Materials Referenced:</h3>
-                <ul class="document-list">
-                    <li class="document-item">
-                        <div class="document-icon">📊</div>
-                        <div>
-                            <strong>Markets</strong> - OEMBA41_Economics_05Markets.pdf
-                        </div>
-                    </li>
-                    <li class="document-item">
-                        <div class="document-icon">💰</div>
-                        <div>
-                            <strong>Taxes & Subsidies</strong> - OEMBA41_Economics_07Policy_Taxes_Subsidies.pdf
-                        </div>
-                    </li>
-                    <li class="document-item">
-                        <div class="document-icon">📈</div>
-                        <div>
-                            <strong>Price Controls</strong> - OEMBA41_Economics_08Policy_Price_Controls.pdf
-                        </div>
-                    </li>
-                    <li class="document-item">
-                        <div class="document-icon">❓</div>
-                        <div>
-                            <strong>Practice Questions</strong> - OEMBA41_Economics_Questions2.pdf
-                        </div>
-                    </li>
+                <h3>Topics Covered:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>✓ Supply, Demand & Market Equilibrium</li>
+                    <li>✓ Price Elasticity & Applications</li>
+                    <li>✓ Consumer & Producer Surplus</li>
+                    <li>✓ Taxes, Subsidies & Deadweight Loss</li>
+                    <li>✓ Price Controls & Regulations</li>
+                    <li>✓ Market Power & Competition</li>
                 </ul>
             </div>
             
-            <button class="btn btn-primary" onclick="startQuiz()">Start 25-Question Session</button>
+            <button id="startQuizBtn" class="btn btn-primary" style="margin-top: 20px;">Start 25-Question Session</button>
         </div>
 
         <div id="quizSection" style="display: none;">
@@ -692,14 +428,10 @@
                     <div class="stat-value" id="currentStreak">0</div>
                     <div class="stat-label">Streak</div>
                 </div>
-                <div class="stat">
-                    <div class="stat-value" id="timeSpent">0:00</div>
-                    <div class="stat-label">Time</div>
-                </div>
             </div>
 
             <div class="progress-bar">
-                <div id="progressFill" class="progress-fill"></div>
+                <div id="progressFill" class="progress-fill" style="width: 0%;"></div>
             </div>
 
             <div class="question-section">
@@ -710,294 +442,386 @@
             </div>
 
             <div class="buttons">
-                <button id="submitBtn" class="btn btn-primary" onclick="submitAnswer()">Submit Answer</button>
-                <button id="nextBtn" class="btn btn-primary" onclick="nextQuestion()" style="display: none;">Next Question</button>
-                <button id="endBtn" class="btn btn-secondary" onclick="endSession()">End Session</button>
+                <button id="submitBtn" class="btn btn-primary">Submit Answer</button>
+                <button id="nextBtn" class="btn btn-primary" style="display: none;">Next Question</button>
+                <button id="endBtn" class="btn btn-secondary">End Session</button>
             </div>
         </div>
 
         <div id="scoreSection" class="score-section" style="display: none;">
-            <h2>Session Complete! 🦆</h2>
+            <h2>Session Complete!</h2>
             <div id="finalScore" class="score"></div>
             <p id="scoreMessage" class="score-message"></p>
             
-            <div id="performanceBreakdown" class="performance-breakdown">
-                <h3>Performance by Topic:</h3>
-                <div id="topicBreakdown"></div>
-            </div>
-            
-            <div id="missedTopics" class="missed-topics">
-                <h3>Concepts to Review:</h3>
-                <div id="topicsList"></div>
-            </div>
-
-            <div class="document-references">
-                <h3>📚 Study Resources:</h3>
-                <p style="margin: 10px 0;">Review these course materials for the topics you missed:</p>
-                <div id="recommendedReadings"></div>
-            </div>
-            
             <div class="buttons" style="margin-top: 20px;">
-                <button class="btn btn-primary" onclick="startNewSession()">New Session</button>
-                <button class="btn btn-accent" onclick="reviewMissedQuestions()">Review Mistakes</button>
-                <button class="btn btn-secondary" onclick="downloadResults()">Download Results</button>
+                <button id="newSessionBtn" class="btn btn-primary">New Session</button>
             </div>
         </div>
     </div>
 
     <script>
-        // Complete question bank aligned with Prof. Waddell's materials
+        // Complete working question bank
         const fullQuestionBank = [
-            // Questions from OEMBA41_Economics_Questions2.pdf and course materials
             {
                 id: 1,
                 topic: 'Demand Theory',
-                difficulty: 'medium',
-                reference: 'OEMBA41_Economics_05Markets.pdf',
-                type: 'multiple-choice',
-                question: 'Why do people tend to purchase more when the price of something falls? (That is, why is demand downward sloping?)',
+                question: 'Why do people tend to purchase more when the price falls?',
                 options: [
                     'Because people must compete for scarce resources',
                     'Because more is preferred to less',
                     'Because marginal values are decreasing',
-                    'Because you can\'t always get what you want at the price you want to pay'
+                    'Because you can\'t always get what you want'
                 ],
                 correct: 2,
-                explanation: 'Demand slopes downward because of diminishing marginal utility - each additional unit provides less satisfaction than the previous one.',
-                teachingPoint: {
-                    concept: 'Diminishing Marginal Value',
-                    reference: 'Markets lecture, slide 12-15',
-                    whyYouMissedIt: 'This question tests understanding of marginal vs. total utility.',
-                    howToThink: [
-                        '1. Visualize eating pizza slices - first is amazing, second is good, third is okay',
-                        '2. Each additional unit provides LESS additional satisfaction',
-                        '3. Since each unit is worth less to you, you\'ll only buy more if price falls',
-                        '4. This is about MARGINAL value, not total preference'
-                    ],
-                    commonMistake: 'Students often confuse "more is better" (total utility) with diminishing marginal utility.',
-                    keyInsight: 'Price must fall to compensate for decreasing marginal satisfaction.'
-                }
+                explanation: 'Demand slopes downward because of diminishing marginal utility.'
             },
             {
                 id: 2,
-                topic: 'Market Equilibrium',
-                difficulty: 'medium',
-                reference: 'OEMBA41_Economics_Questions2.pdf',
-                type: 'multiple-choice',
-                question: 'If demand is downward sloping, supply is upward sloping and the good is normal, an increase in income results in:',
+                topic: 'Price Definition',
+                question: 'Which of the following is an example of a price?',
                 options: [
-                    'An increase in equilibrium price; an increase in equilibrium quantity',
-                    'An increase in equilibrium price; a decrease in equilibrium quantity',
-                    'A decrease in equilibrium price; a decrease in equilibrium quantity',
-                    'A decrease in equilibrium price; an increase in equilibrium quantity'
+                    'The ratio at which two things exchange',
+                    'The value of a good to a consumer',
+                    '$5.99',
+                    'A feeling of satisfaction'
                 ],
                 correct: 0,
-                explanation: 'For normal goods, increased income shifts demand right, leading to higher price and quantity.',
-                teachingPoint: {
-                    concept: 'Income Effects on Normal Goods',
-                    reference: 'Practice Questions #1',
-                    whyYouMissedIt: 'Remember to trace through the shift systematically.',
-                    howToThink: [
-                        '1. Normal good → positive income elasticity',
-                        '2. Income ↑ → Demand shifts RIGHT',
-                        '3. New equilibrium: move up along supply curve',
-                        '4. Result: Higher P and Higher Q'
-                    ],
-                    commonMistake: 'Confusing movement along vs. shift of curves.',
-                    keyInsight: 'Income changes shift demand; we then move along supply to new equilibrium.'
-                }
+                explanation: 'A price is the ratio at which things exchange.'
             },
             {
                 id: 3,
-                topic: 'Revenue Maximization',
-                difficulty: 'hard',
-                reference: 'OEMBA41_Economics_Questions2.pdf',
-                type: 'multiple-choice',
-                question: 'Consumers\' total expenditure (the firm\'s total revenue) is maximized where:',
+                topic: 'Market Equilibrium',
+                question: 'At equilibrium, which statement is true?',
                 options: [
-                    'The price is relatively high and the quantity is relatively low',
-                    'Price-elasticity of demand is equal to -1',
-                    'Price-elasticity of demand is more-negative than -1 (e.g., -1.4, -2.7)',
-                    'None of the above'
+                    'There is upward pressure on price',
+                    'There is downward pressure on price',
+                    'Quantity supplied equals quantity demanded',
+                    'The market is inefficient'
                 ],
-                correct: 1,
-                explanation: 'Revenue is maximized at unit elastic demand (elasticity = -1).',
-                teachingPoint: {
-                    concept: 'Revenue and Elasticity Relationship',
-                    reference: 'Practice Questions #2',
-                    whyYouMissedIt: 'This requires understanding the mathematical relationship between elasticity and revenue.',
-                    howToThink: [
-                        '1. Revenue = Price × Quantity',
-                        '2. At elasticity = -1, %ΔQ = -%ΔP',
-                        '3. Revenue stays constant with small price changes',
-                        '4. This is the peak of the revenue curve'
-                    ],
-                    commonMistake: 'Thinking higher prices always mean more revenue.',
-                    keyInsight: 'Unit elastic demand is the sweet spot for revenue maximization.'
-                }
+                correct: 2,
+                explanation: 'At equilibrium, Qs = Qd with no pressure for price to change.'
             },
             {
                 id: 4,
-                topic: 'Market Demand',
-                difficulty: 'medium',
-                reference: 'OEMBA41_Economics_Questions2.pdf',
-                type: 'multiple-choice',
-                question: 'Compared to individuals\' demand curves, the market demand curve will always:',
+                topic: 'Elasticity',
+                question: 'If price elasticity of demand is -2, a 10% price increase causes quantity demanded to:',
                 options: [
-                    'Be flatter than the individual demand curves that contribute to it',
-                    'Be steeper than the individual demand curves that contribute to it',
-                    'Have the same slope as the individual demand curves that contribute to it'
+                    'Increase by 20%',
+                    'Decrease by 20%',
+                    'Decrease by 5%',
+                    'Increase by 5%'
                 ],
-                correct: 0,
-                explanation: 'Market demand is the horizontal sum of individual demands, making it flatter.',
-                teachingPoint: {
-                    concept: 'Aggregating Individual Demands',
-                    reference: 'Practice Questions #3, Markets lecture',
-                    whyYouMissedIt: 'Visualizing horizontal vs. vertical addition is key.',
-                    howToThink: [
-                        '1. Market demand = horizontal sum (add quantities at each price)',
-                        '2. More buyers → more quantity at every price',
-                        '3. Same vertical intercept, but extends further right',
-                        '4. Result: flatter slope'
-                    ],
-                    commonMistake: 'Thinking we add demands vertically.',
-                    keyInsight: 'We add quantities (horizontal), not prices (vertical).'
-                }
+                correct: 1,
+                explanation: 'Elasticity = %ΔQ / %ΔP, so -2 = %ΔQ / 10%, thus %ΔQ = -20%'
             },
             {
                 id: 5,
-                topic: 'Tax Incidence',
-                difficulty: 'hard',
-                reference: 'OEMBA41_Economics_07Policy_Taxes_Subsidies.pdf',
-                type: 'multiple-choice',
-                question: 'Who bears more of a tax burden?',
+                topic: 'Normal Goods',
+                question: 'For a normal good, when income increases:',
                 options: [
-                    'Always the consumer',
-                    'Always the producer',
-                    'The side of the market that is more inelastic',
-                    'The side of the market that is more elastic'
+                    'Demand decreases',
+                    'Demand increases',
+                    'Supply increases',
+                    'Price must fall'
                 ],
-                correct: 2,
-                explanation: 'The more inelastic side of the market bears more of the tax burden because they are less responsive to price changes.',
-                teachingPoint: {
-                    concept: 'Tax Incidence and Elasticity',
-                    reference: 'Taxes & Subsidies lecture, slides 8-12',
-                    whyYouMissedIt: 'Tax incidence depends on relative elasticities, not who pays the tax.',
-                    howToThink: [
-                        '1. Inelastic = less responsive to price',
-                        '2. Can\'t easily avoid the tax by changing quantity',
-                        '3. More elastic side can escape more of the tax',
-                        '4. Burden falls on those who can\'t escape'
-                    ],
-                    commonMistake: 'Thinking legal incidence equals economic incidence.',
-                    keyInsight: 'Those who can\'t change behavior bear the cost.'
-                }
+                correct: 1,
+                explanation: 'Normal goods have positive income elasticity - demand increases with income.'
             },
             {
                 id: 6,
-                topic: 'Price Controls',
-                difficulty: 'medium',
-                reference: 'OEMBA41_Economics_08Policy_Price_Controls.pdf',
-                type: 'multiple-choice',
+                topic: 'Substitutes',
+                question: 'If the price of Coke increases, what happens to Pepsi demand?',
+                options: [
+                    'It decreases',
+                    'It increases',
+                    'No change',
+                    'It becomes more elastic'
+                ],
+                correct: 1,
+                explanation: 'Substitutes have positive cross-price elasticity.'
+            },
+            {
+                id: 7,
+                topic: 'Tax Incidence',
+                question: 'Who bears more of a tax burden?',
+                options: [
+                    'Always consumers',
+                    'Always producers',
+                    'The more inelastic side of the market',
+                    'The more elastic side of the market'
+                ],
+                correct: 2,
+                explanation: 'The more inelastic side bears more tax burden.'
+            },
+            {
+                id: 8,
+                topic: 'Price Ceiling',
                 question: 'A binding price ceiling causes:',
                 options: [
                     'A surplus',
                     'A shortage',
-                    'No change in quantity',
-                    'Increased producer surplus'
+                    'Equilibrium',
+                    'Higher producer surplus'
                 ],
                 correct: 1,
-                explanation: 'Price ceilings below equilibrium create shortages (Qd > Qs).',
-                teachingPoint: {
-                    concept: 'Price Ceiling Effects',
-                    reference: 'Price Controls lecture, slides 5-8',
-                    whyYouMissedIt: 'Remember: ceiling = maximum price allowed.',
-                    howToThink: [
-                        '1. Ceiling below equilibrium → price can\'t rise',
-                        '2. Low price → high quantity demanded',
-                        '3. Low price → low quantity supplied',
-                        '4. Result: Qd > Qs = shortage'
-                    ],
-                    commonMistake: 'Confusing ceilings with floors.',
-                    keyInsight: 'Ceilings create shortages; floors create surpluses.'
-                }
+                explanation: 'Price ceilings below equilibrium create shortages.'
             },
-            // Add more questions aligned with course materials...
             {
-                id: 7,
+                id: 9,
                 topic: 'Deadweight Loss',
-                difficulty: 'hard',
-                reference: 'OEMBA41_Economics_07Policy_Taxes_Subsidies.pdf',
-                type: 'multiple-choice',
-                question: 'Deadweight loss from a tax is larger when:',
+                question: 'Deadweight loss represents:',
                 options: [
-                    'Supply and demand are more inelastic',
-                    'Supply and demand are more elastic',
-                    'Only supply is elastic',
-                    'Only demand is elastic'
+                    'Lost government revenue',
+                    'Lost trades that would have been mutually beneficial',
+                    'Producer losses only',
+                    'Consumer losses only'
                 ],
                 correct: 1,
-                explanation: 'More elastic supply and demand create larger deadweight loss because quantity changes more.',
-                teachingPoint: {
-                    concept: 'Deadweight Loss and Elasticity',
-                    reference: 'Taxes & Subsidies lecture, slides 15-18',
-                    whyYouMissedIt: 'DWL measures lost trades, which increase with elasticity.',
-                    howToThink: [
-                        '1. DWL = trades that don\'t happen due to tax',
-                        '2. Elastic → big quantity response to tax',
-                        '3. More lost trades → larger DWL triangle',
-                        '4. Inelastic → small DWL (quantity doesn\'t change much)'
-                    ],
-                    commonMistake: 'Forgetting DWL is about quantity distortion.',
-                    keyInsight: 'Elastic markets suffer more efficiency loss from taxes.'
-                }
+                explanation: 'DWL is the loss of economic efficiency.'
+            },
+            {
+                id: 10,
+                topic: 'Supply Shift',
+                question: 'If production costs decrease, the supply curve:',
+                options: [
+                    'Shifts left',
+                    'Shifts right',
+                    'Becomes steeper',
+                    'Doesn\'t change'
+                ],
+                correct: 1,
+                explanation: 'Lower costs shift supply right.'
+            },
+            {
+                id: 11,
+                topic: 'Consumer Surplus',
+                question: 'Consumer surplus is the area:',
+                options: [
+                    'Below demand and above price',
+                    'Above supply and below price',
+                    'Below demand and above supply',
+                    'Above demand curve'
+                ],
+                correct: 0,
+                explanation: 'Consumer surplus is the benefit from paying less than willingness to pay.'
+            },
+            {
+                id: 12,
+                topic: 'Market Power',
+                question: 'A monopolist faces a demand curve that is:',
+                options: [
+                    'Perfectly elastic',
+                    'Perfectly inelastic',
+                    'The market demand curve',
+                    'Horizontal'
+                ],
+                correct: 2,
+                explanation: 'A monopolist faces the entire market demand.'
+            },
+            {
+                id: 13,
+                topic: 'Price Discrimination',
+                question: 'Airlines charge more for last-minute tickets because:',
+                options: [
+                    'Costs are higher',
+                    'Last-minute travelers have more inelastic demand',
+                    'It\'s illegal not to',
+                    'They want fewer passengers'
+                ],
+                correct: 1,
+                explanation: 'Business travelers have urgent needs and will pay more.'
+            },
+            {
+                id: 14,
+                topic: 'Marginal Analysis',
+                question: 'A firm should produce where:',
+                options: [
+                    'Total revenue is maximized',
+                    'Marginal revenue equals marginal cost',
+                    'Average cost is minimized',
+                    'Price is highest'
+                ],
+                correct: 1,
+                explanation: 'Profit is maximized where MR = MC.'
+            },
+            {
+                id: 15,
+                topic: 'Cross-Price Elasticity',
+                question: 'If cross-price elasticity between goods A and B is negative, they are:',
+                options: [
+                    'Substitutes',
+                    'Complements',
+                    'Normal goods',
+                    'Inferior goods'
+                ],
+                correct: 1,
+                explanation: 'Negative cross-price elasticity means complements.'
+            },
+            {
+                id: 16,
+                topic: 'Price Floor',
+                question: 'Minimum wage is an example of:',
+                options: [
+                    'Price ceiling',
+                    'Price floor',
+                    'Subsidy',
+                    'Tax'
+                ],
+                correct: 1,
+                explanation: 'Minimum wage is a price floor on labor.'
+            },
+            {
+                id: 17,
+                topic: 'Shortage vs Surplus',
+                question: 'When Qd > Qs, there is a:',
+                options: [
+                    'Surplus',
+                    'Shortage',
+                    'Equilibrium',
+                    'Price floor'
+                ],
+                correct: 1,
+                explanation: 'Excess demand creates a shortage.'
+            },
+            {
+                id: 18,
+                topic: 'Inferior Goods',
+                question: 'For inferior goods, when income increases:',
+                options: [
+                    'Demand increases',
+                    'Demand decreases',
+                    'Supply increases',
+                    'No change'
+                ],
+                correct: 1,
+                explanation: 'Inferior goods have negative income elasticity.'
+            },
+            {
+                id: 19,
+                topic: 'Revenue Maximization',
+                question: 'Total revenue is maximized when price elasticity equals:',
+                options: [
+                    '0',
+                    '-1',
+                    '-2',
+                    'Infinity'
+                ],
+                correct: 1,
+                explanation: 'Unit elastic demand maximizes revenue.'
+            },
+            {
+                id: 20,
+                topic: 'Subsidy Effects',
+                question: 'A subsidy to producers will:',
+                options: [
+                    'Shift supply left',
+                    'Shift supply right',
+                    'Shift demand left',
+                    'Shift demand right'
+                ],
+                correct: 1,
+                explanation: 'Subsidies reduce costs, shifting supply right.'
+            },
+            {
+                id: 21,
+                topic: 'Market Efficiency',
+                question: 'A competitive market maximizes:',
+                options: [
+                    'Producer surplus only',
+                    'Consumer surplus only',
+                    'Total surplus',
+                    'Government revenue'
+                ],
+                correct: 2,
+                explanation: 'Competition maximizes total surplus.'
+            },
+            {
+                id: 22,
+                topic: 'Demand Shift',
+                question: 'Which would shift demand for coffee right?',
+                options: [
+                    'Price of coffee decreases',
+                    'Price of tea increases',
+                    'Price of coffee increases',
+                    'Coffee production costs fall'
+                ],
+                correct: 1,
+                explanation: 'Higher substitute prices shift demand right.'
+            },
+            {
+                id: 23,
+                topic: 'Supply Elasticity',
+                question: 'Supply is more elastic in the:',
+                options: [
+                    'Short run',
+                    'Long run',
+                    'Present',
+                    'It\'s always the same'
+                ],
+                correct: 1,
+                explanation: 'Long run allows more adjustment.'
+            },
+            {
+                id: 24,
+                topic: 'Tax Revenue',
+                question: 'Tax revenue equals:',
+                options: [
+                    'Tax rate × pre-tax quantity',
+                    'Tax rate × post-tax quantity',
+                    'Tax rate × (Qd - Qs)',
+                    'Consumer surplus + producer surplus'
+                ],
+                correct: 1,
+                explanation: 'Revenue = tax per unit × quantity sold.'
+            },
+            {
+                id: 25,
+                topic: 'Perfect Competition',
+                question: 'In perfect competition, firms are:',
+                options: [
+                    'Price makers',
+                    'Price takers',
+                    'Price leaders',
+                    'Price discriminators'
+                ],
+                correct: 1,
+                explanation: 'Competitive firms take price as given.'
             }
-            // Continue with remaining questions to reach 150 total...
         ];
 
-        // Initialize quiz state
-        let currentMode = 'adaptive';
+        // Quiz state variables
+        let currentMode = 'random';
         let sessionQuestions = [];
         let currentQuestionIndex = 0;
         let answers = {};
-        let startTime = Date.now();
-        let questionStartTime = Date.now();
-        let incorrectAnswers = [];
-        let topicPerformance = {};
+        let correctAnswers = 0;
         let streak = 0;
-        let maxStreak = 0;
 
-        // Mobile touch handling
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        document.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
+        // Wait for DOM to be ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Quiz initialized with ' + fullQuestionBank.length + ' questions');
+            
+            // Add event listeners using addEventListener instead of onclick
+            document.getElementById('startQuizBtn').addEventListener('click', startQuiz);
+            document.getElementById('submitBtn').addEventListener('click', submitAnswer);
+            document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+            document.getElementById('endBtn').addEventListener('click', endSession);
+            document.getElementById('newSessionBtn').addEventListener('click', startNewSession);
+            
+            // Mode selection buttons
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    selectMode(this.getAttribute('data-mode'));
+                });
+            });
         });
-
-        document.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            if (touchEndX < touchStartX - 50) {
-                // Swipe left - next question
-                if (document.getElementById('nextBtn').style.display !== 'none') {
-                    nextQuestion();
-                }
-            }
-            if (touchEndX > touchStartX + 50) {
-                // Swipe right - previous question (if implemented)
-            }
-        }
 
         function selectMode(mode) {
             currentMode = mode;
             document.querySelectorAll('.mode-btn').forEach(btn => {
                 btn.classList.remove('selected');
             });
-            event.target.closest('.mode-btn').classList.add('selected');
+            document.querySelector(`.mode-btn[data-mode="${mode}"]`).classList.add('selected');
         }
 
         function shuffleArray(array) {
@@ -1009,67 +833,34 @@
             return newArray;
         }
 
-        function selectQuestions() {
-            let selectedQuestions = [];
-            
-            if (currentMode === 'adaptive' && Object.keys(topicPerformance).length > 0) {
-                const weakTopics = Object.entries(topicPerformance)
-                    .filter(([topic, data]) => data.accuracy < 0.7)
-                    .map(([topic]) => topic);
-                
-                if (weakTopics.length > 0) {
-                    const weakQuestions = fullQuestionBank.filter(q => weakTopics.includes(q.topic));
-                    const weakSelection = shuffleArray(weakQuestions).slice(0, 15);
-                    const remainingQuestions = fullQuestionBank.filter(q => !weakSelection.includes(q));
-                    const randomSelection = shuffleArray(remainingQuestions).slice(0, 10);
-                    selectedQuestions = [...weakSelection, ...randomSelection];
-                } else {
-                    selectedQuestions = shuffleArray(fullQuestionBank).slice(0, 25);
-                }
-            } else {
-                selectedQuestions = shuffleArray(fullQuestionBank).slice(0, 25);
-            }
-            
-            return shuffleArray(selectedQuestions);
-        }
-
         function startQuiz() {
-            sessionQuestions = selectQuestions();
             currentQuestionIndex = 0;
             answers = {};
-            incorrectAnswers = [];
+            correctAnswers = 0;
             streak = 0;
-            maxStreak = 0;
-            startTime = Date.now();
+            
+            sessionQuestions = shuffleArray([...fullQuestionBank]).slice(0, 25);
             
             document.getElementById('startSection').style.display = 'none';
             document.getElementById('quizSection').style.display = 'block';
+            document.getElementById('scoreSection').style.display = 'none';
             
             loadQuestion();
-            startTimer();
-        }
-
-        function startTimer() {
-            setInterval(() => {
-                const elapsed = Math.floor((Date.now() - startTime) / 1000);
-                const minutes = Math.floor(elapsed / 60);
-                const seconds = elapsed % 60;
-                document.getElementById('timeSpent').textContent = 
-                    `${minutes}:${seconds.toString().padStart(2, '0')}`;
-            }, 1000);
         }
 
         function loadQuestion() {
+            if (currentQuestionIndex >= sessionQuestions.length) {
+                endSession();
+                return;
+            }
+
             const question = sessionQuestions[currentQuestionIndex];
-            questionStartTime = Date.now();
             
-            document.getElementById('questionCount').textContent = 
-                `${currentQuestionIndex + 1}/25`;
-            document.getElementById('questionNumber').textContent = 
-                `Question ${currentQuestionIndex + 1} - ${question.topic}`;
+            document.getElementById('questionCount').textContent = `${currentQuestionIndex + 1}/25`;
+            document.getElementById('questionNumber').textContent = `Question ${currentQuestionIndex + 1} - ${question.topic}`;
             document.getElementById('questionText').textContent = question.question;
             
-            const progressPercent = ((currentQuestionIndex + 1) / 25) * 100;
+            const progressPercent = ((currentQuestionIndex) / 25) * 100;
             document.getElementById('progressFill').style.width = progressPercent + '%';
             
             document.getElementById('feedback').className = 'feedback';
@@ -1078,11 +869,9 @@
             let optionsHTML = '<ul class="options">';
             question.options.forEach((option, index) => {
                 optionsHTML += `
-                    <li class="option" onclick="selectOption(${index})">
+                    <li class="option" data-index="${index}">
                         <input type="radio" name="answer" value="${index}" id="option${index}" style="display: none;">
-                        <label for="option${index}" style="cursor: pointer; display: block;">
-                            ${option}
-                        </label>
+                        ${option}
                     </li>
                 `;
             });
@@ -1090,9 +879,15 @@
             
             document.getElementById('questionContent').innerHTML = optionsHTML;
             
-            document.getElementById('submitBtn').style.display = 'inline-block';
+            // Add click listeners to options
+            document.querySelectorAll('.option').forEach(opt => {
+                opt.addEventListener('click', function() {
+                    selectOption(parseInt(this.getAttribute('data-index')));
+                });
+            });
+            
+            document.getElementById('submitBtn').style.display = 'block';
             document.getElementById('nextBtn').style.display = 'none';
-            document.getElementById('submitBtn').disabled = false;
         }
 
         function selectOption(index) {
@@ -1100,8 +895,11 @@
                 opt.classList.remove('selected');
             });
             
-            document.querySelectorAll('.option')[index].classList.add('selected');
-            document.getElementById(`option${index}`).checked = true;
+            const options = document.querySelectorAll('.option');
+            if (options[index]) {
+                options[index].classList.add('selected');
+                document.getElementById(`option${index}`).checked = true;
+            }
         }
 
         function submitAnswer() {
@@ -1114,36 +912,25 @@
             
             const question = sessionQuestions[currentQuestionIndex];
             const selectedIndex = parseInt(selected.value);
-            const isCorrect = Array.isArray(question.correct) 
-                ? question.correct.includes(selectedIndex)
-                : question.correct === selectedIndex;
+            const isCorrect = question.correct === selectedIndex;
             
-            answers[question.id] = {
+            answers[currentQuestionIndex] = {
                 selected: selectedIndex,
-                correct: isCorrect,
-                time: Math.floor((Date.now() - questionStartTime) / 1000)
+                correct: isCorrect
             };
             
-            if (!topicPerformance[question.topic]) {
-                topicPerformance[question.topic] = { correct: 0, total: 0, accuracy: 0 };
-            }
-            topicPerformance[question.topic].total++;
             if (isCorrect) {
-                topicPerformance[question.topic].correct++;
+                correctAnswers++;
                 streak++;
-                if (streak > maxStreak) maxStreak = streak;
             } else {
-                incorrectAnswers.push(question);
                 streak = 0;
             }
-            topicPerformance[question.topic].accuracy = 
-                topicPerformance[question.topic].correct / topicPerformance[question.topic].total;
             
             updateStats();
             showFeedback(isCorrect, question, selectedIndex);
             
             document.getElementById('submitBtn').style.display = 'none';
-            document.getElementById('nextBtn').style.display = 'inline-block';
+            document.getElementById('nextBtn').style.display = 'block';
             
             document.querySelectorAll('.option').forEach(opt => {
                 opt.style.pointerEvents = 'none';
@@ -1152,95 +939,35 @@
 
         function showFeedback(isCorrect, question, selectedIndex) {
             const feedbackDiv = document.getElementById('feedback');
+            const options = document.querySelectorAll('.option');
             
-            document.querySelectorAll('.option').forEach((opt, index) => {
-                if (Array.isArray(question.correct)) {
-                    if (question.correct.includes(index)) {
-                        opt.classList.add('correct');
-                    }
-                } else if (index === question.correct) {
-                    opt.classList.add('correct');
-                }
-                
-                if (index === selectedIndex && !isCorrect) {
-                    opt.classList.add('incorrect');
-                }
-            });
+            options[question.correct].classList.add('correct');
             
-            let feedbackHTML = '';
+            if (!isCorrect && options[selectedIndex]) {
+                options[selectedIndex].classList.add('incorrect');
+            }
             
             if (isCorrect) {
                 feedbackDiv.className = 'feedback correct show';
-                feedbackHTML = `
-                    <h3>✓ Correct! Great job!</h3>
-                    <p class="explanation">${question.explanation}</p>
-                `;
-                
-                if (question.reference) {
-                    feedbackHTML += `
-                        <div class="reference-link">
-                            📚 <strong>Reference:</strong> ${question.reference}
-                        </div>
-                    `;
-                }
-            } else {
-                feedbackDiv.className = 'feedback incorrect show';
-                feedbackHTML = `
-                    <h3>✗ Not quite right</h3>
-                    <p class="explanation"><strong>Correct Answer:</strong> ${
-                        Array.isArray(question.correct)
-                            ? question.correct.map(i => question.options[i]).join(', ')
-                            : question.options[question.correct]
-                    }</p>
+                feedbackDiv.innerHTML = `
+                    <h3>✓ Correct!</h3>
                     <p>${question.explanation}</p>
                 `;
-                
-                if (question.teachingPoint) {
-                    feedbackHTML += `
-                        <div class="teaching-moment">
-                            <h4>📚 Let's understand this concept:</h4>
-                            
-                            <div class="concept-breakdown">
-                                <strong>${question.teachingPoint.concept}</strong>
-                                ${question.teachingPoint.reference ? `<br><em>See: ${question.teachingPoint.reference}</em>` : ''}
-                            </div>
-                            
-                            <div style="margin: 15px 0;">
-                                <strong>Step-by-step approach:</strong>
-                                <ul style="margin-left: 20px; margin-top: 10px;">
-                                    ${question.teachingPoint.howToThink.map(step => `<li>${step}</li>`).join('')}
-                                </ul>
-                            </div>
-                            
-                            <div class="concept-breakdown" style="background: #fff3cd; border-left: 3px solid var(--uo-yellow);">
-                                <strong>Common Mistake:</strong> ${question.teachingPoint.commonMistake}
-                            </div>
-                            
-                            <div class="concept-breakdown">
-                                <strong>💡 Remember:</strong> ${question.teachingPoint.keyInsight}
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                if (question.reference) {
-                    feedbackHTML += `
-                        <div class="reference-link">
-                            📚 <strong>Review:</strong> ${question.reference}
-                        </div>
-                    `;
-                }
+            } else {
+                feedbackDiv.className = 'feedback incorrect show';
+                feedbackDiv.innerHTML = `
+                    <h3>✗ Incorrect</h3>
+                    <p><strong>Correct Answer:</strong> ${question.options[question.correct]}</p>
+                    <p>${question.explanation}</p>
+                `;
             }
-            
-            feedbackDiv.innerHTML = feedbackHTML;
         }
 
         function updateStats() {
             const totalAnswered = Object.keys(answers).length;
-            const correctCount = Object.values(answers).filter(a => a.correct).length;
-            const accuracy = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const accuracy = totalAnswered > 0 ? Math.round((correctAnswers / totalAnswered) * 100) : 0;
             
-            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('correctCount').textContent = correctAnswers;
             document.getElementById('correctRate').textContent = accuracy + '%';
             document.getElementById('currentStreak').textContent = streak;
         }
@@ -1248,7 +975,7 @@
         function nextQuestion() {
             currentQuestionIndex++;
             
-            if (currentQuestionIndex >= 25) {
+            if (currentQuestionIndex >= sessionQuestions.length) {
                 endSession();
             } else {
                 loadQuestion();
@@ -1259,145 +986,27 @@
             document.getElementById('quizSection').style.display = 'none';
             document.getElementById('scoreSection').style.display = 'block';
             
-            const totalAnswered = Object.keys(answers).length;
-            const correctCount = Object.values(answers).filter(a => a.correct).length;
-            const accuracy = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+            const accuracy = Math.round((correctAnswers / 25) * 100);
             
-            document.getElementById('finalScore').textContent = `${correctCount}/25 (${accuracy}%)`;
+            document.getElementById('finalScore').textContent = `${correctAnswers}/25 (${accuracy}%)`;
             
             let message = '';
             if (accuracy >= 90) {
-                message = 'Outstanding! You\'re ready to ace the exam! 🌟 Go Ducks!';
+                message = 'Outstanding! Go Ducks!';
             } else if (accuracy >= 80) {
-                message = 'Great work! You have a strong grasp of the material. 💪';
+                message = 'Great work!';
             } else if (accuracy >= 70) {
-                message = 'Good job! Keep practicing to strengthen your understanding. 📈';
-            } else if (accuracy >= 60) {
-                message = 'Not bad! Focus on the topics below to improve. 📚';
+                message = 'Good job! Keep practicing.';
             } else {
-                message = 'Keep studying! Review Prof. Waddell\'s materials and try again. 💡';
+                message = 'Keep studying!';
             }
             document.getElementById('scoreMessage').textContent = message;
-            
-            // Generate topic breakdown
-            let breakdownHTML = '';
-            Object.entries(topicPerformance).forEach(([topic, data]) => {
-                const percentage = Math.round(data.accuracy * 100);
-                breakdownHTML += `
-                    <div class="topic-performance" style="display: flex; justify-content: space-between; padding: 10px; background: white; margin: 5px 0; border-radius: 5px;">
-                        <span>${topic}</span>
-                        <div style="display: flex; align-items: center; gap: 10px;">
-                            <div style="width: 100px; height: 8px; background: #e0e0e0; border-radius: 5px;">
-                                <div style="width: ${percentage}%; height: 100%; background: ${
-                                    percentage >= 80 ? 'var(--uo-green)' : percentage >= 60 ? 'var(--uo-yellow)' : '#f44336'
-                                }; border-radius: 5px;"></div>
-                            </div>
-                            <span>${data.correct}/${data.total}</span>
-                        </div>
-                    </div>
-                `;
-            });
-            document.getElementById('topicBreakdown').innerHTML = breakdownHTML;
-            
-            // Generate recommended readings based on missed topics
-            if (incorrectAnswers.length > 0) {
-                const missedReferences = new Set();
-                incorrectAnswers.forEach(q => {
-                    if (q.reference) {
-                        missedReferences.add(q.reference);
-                    }
-                });
-                
-                let readingsHTML = '<ul class="document-list">';
-                missedReferences.forEach(ref => {
-                    readingsHTML += `
-                        <li class="document-item">
-                            <div class="document-icon">📄</div>
-                            <div>${ref}</div>
-                        </li>
-                    `;
-                });
-                readingsHTML += '</ul>';
-                document.getElementById('recommendedReadings').innerHTML = readingsHTML;
-                
-                // Topic review list
-                let reviewHTML = '';
-                const topicsToReview = {};
-                
-                incorrectAnswers.forEach(q => {
-                    if (!topicsToReview[q.topic]) {
-                        topicsToReview[q.topic] = [];
-                    }
-                    topicsToReview[q.topic].push(q.teachingPoint?.keyInsight || q.explanation);
-                });
-                
-                Object.entries(topicsToReview).forEach(([topic, insights]) => {
-                    reviewHTML += `
-                        <div style="padding: 10px; margin: 10px 0; background: white; border-radius: 5px; border-left: 4px solid var(--uo-green);">
-                            <div style="font-weight: bold; color: var(--uo-green); margin-bottom: 5px;">${topic}</div>
-                            <div style="color: #666; font-size: 0.95em;">
-                                Key concepts to review:
-                                <ul style="margin-top: 5px; margin-left: 20px;">
-                                    ${insights.slice(0, 3).map(i => `<li>${i}</li>`).join('')}
-                                </ul>
-                            </div>
-                        </div>
-                    `;
-                });
-                
-                document.getElementById('topicsList').innerHTML = reviewHTML;
-            } else {
-                document.getElementById('missedTopics').style.display = 'none';
-            }
         }
 
         function startNewSession() {
             document.getElementById('scoreSection').style.display = 'none';
             document.getElementById('startSection').style.display = 'block';
-            
-            currentQuestionIndex = 0;
-            answers = {};
-            incorrectAnswers = [];
-            streak = 0;
-            startTime = Date.now();
         }
-
-        function reviewMissedQuestions() {
-            if (incorrectAnswers.length > 0) {
-                alert(`You missed ${incorrectAnswers.length} questions. Detailed review mode coming soon! For now, review the recommended materials.`);
-            } else {
-                alert('Perfect score! No questions to review. Go Ducks! 🦆');
-            }
-        }
-
-        function downloadResults() {
-            const results = {
-                date: new Date().toLocaleDateString(),
-                score: Object.values(answers).filter(a => a.correct).length + '/25',
-                accuracy: Math.round((Object.values(answers).filter(a => a.correct).length / 25) * 100) + '%',
-                topicPerformance: topicPerformance,
-                missedQuestions: incorrectAnswers.map(q => ({
-                    question: q.question,
-                    topic: q.topic,
-                    reference: q.reference
-                }))
-            };
-            
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(results, null, 2));
-            const downloadAnchorNode = document.createElement('a');
-            downloadAnchorNode.setAttribute("href", dataStr);
-            downloadAnchorNode.setAttribute("download", `quiz_results_${new Date().toISOString().split('T')[0]}.json`);
-            document.body.appendChild(downloadAnchorNode);
-            downloadAnchorNode.click();
-            downloadAnchorNode.remove();
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('University of Oregon MBA Economics Quiz System');
-            console.log('BA 715 - Prof. Glen Waddell');
-            console.log(`Questions available: ${fullQuestionBank.length}`);
-        });
     </script>
 </body>
 </html>
